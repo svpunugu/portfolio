@@ -6,6 +6,8 @@ import { Paper, Typography, Grid, Card, CardContent, CardMedia, useTheme } from 
 var path = process.env.PUBLIC_URL;
 var AWSSAA = "/AWSSAA.png";
 var AWSMLS = "/AWSMLS.png";
+var PEGASSA = "/PEGACPSSA88V1_Current.png";
+var PEGASA = "/PEGASA102_Current.png";
 
 // Sample certifications data (replace with your actual certifications data)
 const certificationsData = [
@@ -18,6 +20,16 @@ const certificationsData = [
   { name: 'AWS Machine Learning - Specialty', 
     issuer: 'AWS', date: 'August 2023', 
     image: <img src={path + AWSMLS} alt="Certificate 2" 
+                style={{ width: '240px', height: '240px', marginBottom: '20px', cursor: 'pointer', margin: 'auto' }}/>
+  },
+  { name: 'PEGA Senior System Architect', 
+    issuer: 'PEGA', date: 'February 2023', 
+    image: <img src={path + PEGASSA} alt="Certificate 3" 
+                style={{ width: '240px', height: '240px', marginBottom: '20px', cursor: 'pointer', margin: 'auto' }}/>
+  },
+  { name: 'PEGA System Architect', 
+    issuer: 'PEGA', date: 'April 2007', 
+    image: <img src={path + PEGASA} alt="Certificate 4" 
                 style={{ width: '240px', height: '240px', marginBottom: '20px', cursor: 'pointer', margin: 'auto' }}/>
   },
   // Add more certificates as needed

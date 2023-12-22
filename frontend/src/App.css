@@ -389,30 +389,23 @@ textarea {
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
+  and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px; /* Adjust as needed */
-      left: 0;
-      background-color: #2196f3;
-      width: 100%;
-    }
-  
-    .nav-links.open {
-      display: flex;
-    }
-  
-    .menu-toggle {
-      display: flex;
-      left: 0;
-      position: absolute;
-      padding-left: 5px;
-    }
   
     .skills-grid {
       grid-template-columns: repeat(2, 1fr) !important;
+      gap: 20px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+    .skills-grid {
+      grid-template-columns: repeat(3, 1fr) !important;
       gap: 20px;
     }
 }
